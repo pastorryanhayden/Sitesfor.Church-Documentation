@@ -1,10 +1,24 @@
 site_name: Sitesfor.church Documentation
-theme: readthedocs
-extra_css: [extra.css]
+site_url: 'https://sitesfor.church'
+theme: material
 pages:
-- We Make Weird Websites: 'index.md'
-- 1. Tooling Up - what you need to get started: 'tooling-up.md'
-- 2. Setting Up - ten steps for every project: 'setting-up.md'
-- 3. Settling Up - how payment works: 'settling-up.md'
-- 4. Following Up - communicating with the client: 'following-up.md'
-- 5. Powering Up - learning to do it all better: 'powering-up.md'
+- Start Here: "index.md"
+- Intro - We Make Weird Websites: 'intro.md'
+- Site Reps - your biggest asset: 'reps.md'
+- 1. Basics - managing your site with airtable: 'airtable-basics.md'
+- 2. Working with Sermons: 'Working-with-sermons.md'
+- 3. Working with Blog Posts: 'Working-with-blogs.md'
+- 4. Working with About Pages: 'Working-with-about-pages.md'
+- 5. Working with Ministry Pages*: 'Working-with-ministry-pages.md'
+- 6. Working with Events*: 'Working-with-events.md'
+- 7. Working with Photos*: 'Working-with-photos.md'
+extra:
+  logo: 'images/logo.png'
+  version: '0.1.0'
+
+# Extensions
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'

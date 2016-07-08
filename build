@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#build the docs
+mkdocs build --clean;
+
+#copy the docs to the sitesfor.church folder
+cp -a ./site/. /Users/ryanhayden/github/sitesfor.church/docs;
+
+#upload the docs
+cd /Users/ryanhayden/github/sitesfor.church && glynn;
+
+#return to docs folder
+cd /Users/ryanhayden/github/docs;
+
+#turn the mkdocs server back on 
+mkdocs serve;
